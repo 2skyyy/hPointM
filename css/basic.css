@@ -1,0 +1,554 @@
+@charset "UTF-8";
+body{
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   letter-spacing: -1px;
+}
+
+.wrap{
+   /* width: 100%; */
+   position: relative;
+   max-width: 769px;
+   height: 1000px;
+   margin: 0 auto;
+}
+
+/* ----- header 시작 ----- */
+
+header{
+   position: sticky;
+   top: 0;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height: 60px;
+   padding: 0 20px;
+   z-index: 998;
+   background: #fff;
+}
+
+.innerHead{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+}
+
+.logo > a{
+   display: block;
+   width: 75px;
+   height: 25px;
+   background: url('../img/logo.png') no-repeat center center / contain;
+}
+
+.login_join{
+   display: flex;
+   margin-right: 20px;
+   font-size: 14px;
+}
+
+.login_join > li:first-child{
+   margin-right: 10px;
+}
+
+.menu{
+   width: 25px;
+   height: 25px;
+   background: url('../img/menu.png') no-repeat center center / contain;
+   cursor: pointer;
+}
+
+/* ----- header 끝 ----- */
+
+/* ----- hidden_menu 시작 ----- */
+
+.hidden_menu{
+   display: none;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background: #fff;
+   color: #292929;
+}
+
+.active{
+   display: block;
+   z-index: 999;
+}
+
+.hidden_header{
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height: 60px;
+   padding: 0 20px;
+   z-index: 998;
+   background: #fff;
+}
+
+.hiddenHead{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+}
+
+.hiddenHead .logo > a{
+   display: block;
+   width: 75px;
+   height: 25px;
+   background: url('../img/logo.png') no-repeat center center / contain;
+}
+
+.login_app{
+   display: flex;
+   margin-right: 20px;
+   font-size: 14px;
+}
+
+.login_app > li:first-child{
+   margin-right: 10px;
+}
+
+.close{
+   width: 25px;
+   height: 25px;
+   background: url('../img/menu.png') no-repeat center center / contain;
+   cursor: pointer;
+}
+
+.hidden_content{
+   width: 100%;
+}
+
+.hidden_content > p{
+   padding: 20px;
+}
+
+.hidden_content > p > span{
+   color: #6516F6;
+}
+
+.hidden_content > a{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 70px;
+   font-size: 14px;
+   background: #F1F3FF;
+   font-weight: bold;
+}
+
+.hidden_content > a img{
+   width: 30px;
+   height: 30px;
+   margin-left: 10px;
+}
+
+.hiddenNav{
+   width: 100%;
+}
+
+.hiddenNav ul > li > a{
+   display: block;
+   padding: 17px;
+   font-weight: bold;
+   font-size: 20px;
+}
+
+
+/* ----- hidden_menu 끝 ----- */
+
+
+
+/* ----- main 시작 ----- */
+main{}
+
+.section1{
+   width: 100%;
+   height: 920px;
+}
+
+.section1 .swiper {
+   width: 100%;
+   height: 100%;
+}
+
+.section1 .swiper-slide {
+   padding: 80px 30px;
+   color: #fff;
+}
+
+.section1 .swiper-slide img {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.section1 .swiper-slide{
+   width: 100%;
+   height: 100%;
+   background: url('../img/main1.png') no-repeat center center / cover;
+}
+
+.section1 .swiper-slide > h2{
+   font-size: 30px;
+   font-weight: bold;
+   margin-bottom: 20px;
+}
+
+.section1 .swiper-slide > p{
+   font-size: 14px;
+}
+
+.section2{
+   width: 100%;
+   height: 900px;
+   padding: 70px 40px;
+   background: #603DE3;
+}
+
+.s2_back{
+   position: relative;
+   width: 100%;
+   height: 400px; /* !!!!! 화면크기따라 변경 !!!! */
+   margin: 0 auto;
+   background: url('../img/main2.png') no-repeat center center / contain;
+}
+
+.s2_back > span{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -20%);
+   text-align: center;
+   font-size: 16px;
+   letter-spacing: -2px;
+   color: #fff;
+}
+
+.s2_back > span > strong{
+   font-size: 35px;
+   font-weight: bold;
+}
+
+.section2 > h3{
+   padding: 20px 0;
+   text-align: center;
+   color: #fff;
+   font-size: 21px;
+   font-weight: bold;
+   line-height: 1.5;
+}
+
+.section2 > h3 > span{
+   font-size: 25px;
+}
+
+.section2 > h3 > span > b{
+   color: #FFF117;
+}
+
+.point{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin-bottom: 20px;
+}
+
+.point > li{
+   width: 49%;
+   margin-bottom: 10px;
+   border-radius: 8px;
+   overflow: hidden;
+   box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.point > li > a{
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   width: 100%;
+   height: 60px;
+   padding: 10px 15px;
+   background: #fff;
+   box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.point .color{
+   background: #A289FF;
+   color: #fff;
+}
+
+.point > li > a > div{
+   font-size: 12px;
+   font-weight: bold;
+   letter-spacing: -2px;
+}
+
+.point > li > a > div > span{
+   font-size: 18px;
+}
+
+.icon{
+   width: 17px;
+   height: 15px;
+   margin-right: 10px;
+}
+
+.icon1{
+   background: url('../img/s2icon1.png') center center / contain;
+}
+.icon2{
+   background: url('../img/s2icon2.png') center center / contain;
+}
+.icon3{
+   background: url('../img/s2icon3.png') center center / contain;
+}
+.icon4{
+   background: url('../img/s2icon4.png') center center / contain;
+}
+
+.down{
+   display: block;
+   width: 100%;
+   line-height: 60px;
+   border-radius: 8px;
+   background: #FFF890;
+   text-align: center;
+   font-weight: bold;
+   font-size: 18px;
+}
+
+.section3{
+   width: 100%;
+   height: 700px;
+   padding: 60px 0;
+   background: #B9A4F5;    /*  지우기   */ 
+   color: #fff;
+}
+
+.section3 > h3{
+   font-size: 27px;
+   font-weight: bold;
+   letter-spacing: -2px;
+   padding: 10px 30px 30px;
+}
+
+.s3_slide{
+   position: relative;
+   width: 100%;
+}
+
+.section3 .swiper {
+   width: 100%;
+}
+
+.section3 .swiper-slide{
+   text-align: center;
+}
+
+.section3 .swiper-slide > p {
+   display: block;
+   width: 90%;
+   margin: 0 auto;
+   padding-left: 20px;
+   text-align: left;
+   font-size: 16px;
+   font-weight: bold;
+}
+
+.s3_item1 img,
+.s3_item2 img,
+.s3_item3 img,
+.s3_item4 img,
+.s3_item5 img,
+.s3_item6 img{
+   width: 90%;
+   object-fit: contain;
+   margin-bottom: 8px;
+}
+
+.s3_item6 {
+   position: relative;
+}
+
+.s3_item6 > span{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+
+
+
+.section4{
+   padding: 50px 0;
+}
+
+.section4 > h4{
+   padding: 15px 30px;
+   font-size: 25px;
+   font-weight: bold;
+}
+
+.section4 > span{
+   padding: 30px;
+   font-size: 14px;
+   color: #292929;
+}
+
+.s4s4s4{ /* 수정수정수정수정수정 */
+   width: 100%;
+   height: 500px;
+   border: 1px solid red;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+
+
+
+
+
+
+.section5{
+   width: 100%;
+   padding: 60px 0;
+   background: #FAFAFA;
+   color: #292929;
+}
+
+.section5 > h3{
+   font-size: 27px;
+   font-weight: bold;
+   letter-spacing: -2px;
+   padding: 10px 30px 10px;
+}
+
+.section5 > span{
+   font-size: 14px;
+   letter-spacing: -2px;
+   padding: 0 30px;
+}
+
+
+.s5_slide{
+   position: relative;
+   width: 100%;
+   top: 30px;
+   overflow: hidden;
+}
+
+.section5 .swiper {
+   width: 90%;
+   height: 100%;
+}
+
+.section5 .swiper-slide{
+   text-align: center;
+}
+
+.s5_item1 img,
+.s5_item2 img,
+.s5_item3 img{
+   width: 100%;
+   margin-bottom: 8px;
+}
+.section5 .swiper-slide > p {
+   text-align: left;
+   margin: 10px ;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.section5 .swiper-slide > p > span {
+   font-size: 13px;
+   color: #666;
+}
+
+
+
+
+
+
+
+
+footer{
+   width: 100%;
+   height: 230px;
+   padding: 50px 20px;
+   border-top: 1px solid #ddd;
+}
+
+.footer_main{
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer_logo > a{
+   display: block;
+   width: 100px;
+   height: 30px;
+   background: url('../img/logo.png') no-repeat center center / contain;
+}
+
+.footer_icon{
+   display: flex;
+}
+
+.footer_icon > li > a{
+   display: block;
+   width: 40px;
+   height: 40px;
+   margin-left: 10px;
+}
+
+.footer_icon > li:nth-child(1) > a{
+   background: url('../img/footerIcon1.png') no-repeat center center / contain;
+}
+.footer_icon > li:nth-child(2) > a{
+   background: url('../img/footerIcon2.png') no-repeat center center / contain;
+}
+.footer_icon > li:nth-child(3) > a{
+   background: url('../img/footerIcon3.png') no-repeat center center / contain;
+}
+
+.footer_inner{
+   font-size: 12px;
+}
+
+.footer_inner > ul{
+   line-height: 2.5;
+}
+
+.f1,
+.f2{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.f1 > li,
+.f2 > li{
+   margin-right: 10px;
+}
+
+.f1 > li:last-of-type{
+   font-weight: bold;
+   color: #292929;
+}
+
+.f2,
+.footer_inner p{
+   color: #aaa;
+}
+
